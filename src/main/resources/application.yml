@@ -1,0 +1,44 @@
+server:
+  port: 1020
+spring:
+  application:
+    name: User_Management_App
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/UserManagement_DB
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: livxdkabmfccxhty
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: kushwahank1001@gmail.com
+    
+    
+    
+app:
+  messages:
+    dupEmail: Duplicate Email
+    regSucc: User Registered
+    regFail: Registration Failed
+    invalidCredentials: Invalid Credentials
+    pwdMatchErr: New Password And Confirm Password Should Be Same
+    pwdUpdateErr: Password Update Failed
+    oldPwdErr: Given Old Password is Wrong
+
+    
+    
+    
+    
+    
+    
